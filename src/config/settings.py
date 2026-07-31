@@ -22,7 +22,8 @@ else:
     DEBUG = True
 
 
-ALLOWED_HOSTS = env("ALLOWED_HOSTS").split(",")
+ALLOWED_HOSTS = ['*']
+# ALLOWED_HOSTS = env("ALLOWED_HOSTS")
 
 
 # Application definition
@@ -36,6 +37,7 @@ INSTALLED_APPS = [
     'django.contrib.staticfiles',
     'apps.users',
     'apps.utils',
+    'apps.product',
     
     'rest_framework_simplejwt',
 ]
@@ -189,8 +191,8 @@ AUTH_USER_MODEL = "users.User"
 
 
 
-CORS_ALLOWED_ORIGINS = [o.strip() for o in env("CORS_ALLOWED_ORIGINS").split(",")]
-CSRF_TRUSTED_ORIGINS = [o.strip() for o in env("CSRF_TRUSTED_ORIGINS").split(",")]
+CORS_ALLOWED_ORIGINS =  env.list("CORS_ALLOWED_ORIGINS")
+CSRF_TRUSTED_ORIGINS =  env.list("CSRF_TRUSTED_ORIGINS")
 
 if not DEBUG:
     CORS_ALLOW_ALL_ORIGINS = True
