@@ -1,0 +1,72 @@
+{
+    "result": [
+        {
+            "product_code": 238923,
+            "product_name": "ko'ylak",
+            "quantity": 30,
+            "product_materials": [
+                {
+                    "warehouse_id": 1,
+                    "material_name": "mato",
+                    "qty": 12.0,
+                    "price": 1500.0
+                },
+                {
+                    "warehouse_id": 2,
+                    "material_name": "mato",
+                    "qty": 12.0,
+                    "price": 1600.0
+                },
+                {
+                    "warehouse_id": 5,
+                    "material_name": "tugma",
+                    "qty": 150.0,
+                    "price": 300.0
+                },
+                {
+                    "warehouse_id": 3,
+                    "material_name": "ip",
+                    "qty": 40.0,
+                    "price": 500.0
+                },
+                {
+                    "warehouse_id": 4,
+                    "material_name": "ip",
+                    "qty": 260.0,
+                    "price": 550.0
+                }
+            ]
+        },
+        {
+            "product_code": 498723,
+            "product_name": "shim",
+            "quantity": 20,
+            "product_materials": [
+                {
+                    "warehouse_id": 2,
+                    "material_name": "mato",
+                    "qty": 28.0,
+                    "price": 1600.0
+                },
+                {
+                    "warehouse_id": 4,
+                    "material_name": "ip",
+                    "qty": 40.0,
+                    "price": 550.0
+                },
+                {
+                    "warehouse_id": null,
+                    "material_name": "ip",
+                    "qty": 160.0,
+                    "price": null
+                },
+                {
+                    "warehouse_id": 6,
+                    "material_name": "zamok",
+                    "qty": 20.0,
+                    "price": 2000.0
+                }
+            ]
+        }
+    ]
+}
